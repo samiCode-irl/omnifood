@@ -26,6 +26,35 @@ html {
     margin: 0 auto;
 }
 
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1px;
+}
+
+/* -----PARAGRAPH----- */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* -----ICONS----- */
+.icon-big {
+    display: block;
+    font-size: 350%;
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+
 /* -----BUTTONS----- */
 
 .btn:link, .btn:visited {
@@ -54,7 +83,7 @@ html {
 }
 
 .btn-ghost:hover, .btn-ghost:active {
-        color: white;
+    color: white;
 }
 
 /* ------------------------------------------------------ */
@@ -74,18 +103,44 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    
 }
 
-header h1 {
+h1, 
+h2, 
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+h1 {
     margin-top: 0;
     margin-bottom: 15px;
     color: white;
     font-size: 240%;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 1px;
     word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    width: 100px;
+    content: " ";
+    margin: 30px auto 0 auto;
 }
 
 .logo {
@@ -119,3 +174,4 @@ header h1 {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
+
