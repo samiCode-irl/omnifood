@@ -175,3 +175,40 @@ h2::after {
     border-bottom: 2px solid #e67e22;
 }
 
+/* ------------------------------------------------------ */
+/* MEAL SECTION */
+/* ------------------------------------------------------ */
+
+.meals-section {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+
+}
+
+.meals-section li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.meal-photo img {
+    opacity: 0.6;
+    width: 100%;
+    transform: scale(1.15);
+    transition: 0.4s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
