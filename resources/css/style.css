@@ -174,19 +174,25 @@ h2::after {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
+.clearfix::after,
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 /* ------------------------------------------------------ */
 /* MEAL SECTION */
 /* ------------------------------------------------------ */
 
-.meals-section {
+.section-meals {
     list-style: none;
     width: 100%;
     padding: 0;
 
 }
 
-.meals-section li {
+.section-meals li {
     display: block;
     float: left;
     width: 25%;
@@ -212,3 +218,64 @@ h2::after {
 }
 
 
+
+/* ----------------------------------------------- */
+/* HOW IT WORKS SECTION */
+/* ----------------------------------------------- */
+
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+.steps-box {
+    margin-top: 30px;
+}
+
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.steps-box:last-child {
+    text-align: left;
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+    color: #e67e22;
+    font-size: 150%;
+    height: 54px;
+    width: 54px;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+    float: left;
+    padding: 5px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
